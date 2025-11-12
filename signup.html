@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up – Clash of Code</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="signup.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <link rel="icon" type="image/png" href="favicon-32x32.png">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header class="navbar glass-effect">
+    <div class="logo">⚔️ Clash of Code</div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="rules.html" class="nav-link">Rules</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="signup.html" class="nav-link active highlight">Sign Up</a>
+    </nav>
+  </header>
+
+  <main class="content-section fade-in">
+    <h1 class="page-title">Student Sign Up</h1>
+    <form id="signupForm" class="form-card">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required placeholder="Your full name"/>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="you@example.com"/>
+
+      <label for="phone">Phone (Optional)</label>
+      <input type="tel" id="phone" placeholder="+251..."/>
+
+      <label for="skills">Technical Skills</label>
+      <input type="text" id="skills" required placeholder="e.g., HTML, CSS, JS"/>
+
+      <label for="achievements">Notable Achievements</label>
+      <textarea id="achievements" rows="3" required placeholder="Olympiad medalist, built an app..."></textarea>
+
+      <label for="parentName">Parent/Guardian's Name</label>
+      <input type="text" id="parentName" required placeholder="Guardian's name"/>
+
+      <label for="parentEmail">Parent's Email</label>
+      <input type="email" id="parentEmail" required placeholder="guardian@example.com"/>
+
+      <label for="parentPhone">Parent's Phone</label>
+      <input type="tel" id="parentPhone" required placeholder="+251..."/>
+		<label>
+  			<input type="checkbox" id="contractCheck" required/>
+  I confirm I’ve read and will email the signed contract:
+  			<a href="https://docuseal.com/d/35voftB2Qdkbsd" target="_blank" style="color: #66ccff;">Open Contract</a>
+		</label>
+
+
+      <button type="submit">Register</button>
+      <p id="message" class="status-message"></p>		
+		</section>
+
+    </form>
+	<section id="verifyNotice" class="form-card hidden">
+  <h2>🎉 Registration Complete</h2>
+  <p>We’ve sent a verification link to your email.</p>
+  <p>Please open your inbox and click the link to verify your account.</p>
+  <p>Once verified, you’ll be able to participate in Clash of Code.</p>
+<a href="https://docuseal.com/d/35voftB2Qdkbsd" target="_blank" style="color: #66ccff;">Open Contract</a>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Haile-Manas Academy – Designed by Samuel G. Meta</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – Clash of Code</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="login.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <link rel="icon" type="image/png" href="favicon-32x32.png">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+</head>
+<body>
+  <main class="content-section">
+    <h1 class="page-title">Login</h1>
+    <form id="loginForm" class="form-card">
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="you@example.com"/>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required placeholder="Password"/>
+
+      <button type="submit">Login</button>
+      <p id="loginMessage" class="status-message"></p>
+    </form>
+  </main>
+</body>
+</html>
